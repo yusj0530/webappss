@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/assets/css/hello.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <form action="/helloweb/join" method="post">{% csrf_token %}
+          이메일: <input type="text" name="email" value=""/>
+        <br/><br/>
+
+        비밀번호: <input type="password" name="password" value=""/>
+        <br/><br/>
+
+        성별: <input type="radio" name="gender" value="female" >여
+                 <input type="radio" name="gender" value="male">남
+          <br/><br/>
+
+        생년:
+        <select name="birth-year">
+                    <option value="2018">2018년</option>
+                    <option value="2017">2017년</option>
+                    <option value="2016">2016년</option>
+                    <option value="2015">2015년</option>
+                    <option value="2014">2014년</option>
+                    <option value="2013">2013년</option>
+                    <option value="2012">2012년</option>
+                    <option value="2011">2011년</option>
+                    <option value="2010">2010년</option>
+
+        </select>
+        <br/><br/>
+
+        취미:
+        <input type="checkbox" name="hobby" value="reading">독서
+        <input type="checkbox" name="hobby" value="swimming">수영
+        <input type="checkbox" name="hobby" value="sleeping">잠자기
+        <input type="checkbox" name="hobby" value="coding">코딩
+        <br/><br/>
+
+        자기소개
+        <br/><br/>
+        <textarea name="self-intro"></textarea>
+        <br/><br/>
+
+
+        <input type="submit" value="회원가입"/>
+        <br/><br/>
+    </form>
+
+
+    <h1>제목입니다.</h1>
+    <h2>제목입니다.</h2>
+    <h3>제목입니다.</h3>
+    <h4>제목입니다.</h4>
+    <h5>제목입니다.</h5>
+    <h6>제목입니다.</h6>
+
+
+    <a href="https://www.naver.com" target="_blank">다른 도메인으로 연결하는 경우</a><br>
+    <a href="/helloweb/hello">같은 도메인으로 연결하는 경우 절대경로로 연결</a><br>
+    <a href="hello">같은 도메인으로 연결하는 경우 상대경로로 연결</a>
+
+    <a href="/assets/images/aaa.jpeg"><img src="/assets/images/aaa.jpeg"/></a></br>
+    <a href="/assets/images/seals2.jpg"><img src="/assets/images/seals.jpg"/></a>
+
+    <p>
+        내 검색어는 <em>최대 10개</em>까지 저장할 수 있습니다.</br>
+        추가하시려면 기존 내 <strong>검색어</strong>를 지워주세요.
+    </p>
+
+    <table>
+        <tr>
+            <td>cell(0,0)</td>
+            <td>cell(0,1)</td>
+            <td>cell(0,2)</td>
+        </tr>
+
+        <tr>
+            <td>cell(1,0)</td>
+            <td>cell(1,1)</td>
+            <td>cell(1,2)</td>
+        </tr>
+
+        <tr>
+            <td>cell(2,0)</td>
+            <td>cell(2,1)</td>
+            <td>cell(2,2)</td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>

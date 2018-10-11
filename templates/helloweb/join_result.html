@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>회원가입 결과</h1>
+    이름: {{ email_value }} <br/>
+    비밀번호: {{ password_value }}<br/>
+    성별: {{ gender_value }}<br/>
+    생년: {{ byear_value }}<br/>
+    취미:
+    <ul>
+    {% for hobby in hobby_values %}
+        <li>{{ hobby }}</li>
+    {% endfor %}
+    </ul>
+    자기소개 :{{ selfintro_value }}<br/>
+</body>
+</html>
